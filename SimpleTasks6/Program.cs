@@ -26,7 +26,7 @@ namespace SimpleTasks6
             }
             else
             {
-                Console.WriteLine($"Wrong input string!");
+                Console.WriteLine($"Wrong input string: {numberStr}");
             }
         }
 

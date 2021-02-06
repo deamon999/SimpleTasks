@@ -7,14 +7,11 @@ namespace SimpleTasks5
     {
         static void Main(string[] args)
         {
-            string str;
-            char searchedChar;
-
             Console.WriteLine("Enter your string:");
-            str = Console.ReadLine();
+            string str = Console.ReadLine();
 
             Console.WriteLine("Enter searched char:");
-            searchedChar = Console.ReadKey().KeyChar;
+            char searchedChar = Console.ReadKey().KeyChar;
 
             Console.WriteLine();
 

@@ -8,16 +8,13 @@ namespace SimpleTasks2
         {
             int lineA, lineB, lineC;
             Console.WriteLine("Please enter width of first line:");
-            string lineAStr = Console.ReadLine();
-            int.TryParse(lineAStr, out lineA);
+            int.TryParse(Console.ReadLine(), out lineA);
 
             Console.WriteLine("Please enter width of first line:");
-            string lineBStr = Console.ReadLine();
-            int.TryParse(lineBStr, out lineB);
+            int.TryParse(Console.ReadLine(), out lineB);
 
             Console.WriteLine("Please enter width of first line:");
-            string lineCStr = Console.ReadLine();
-            int.TryParse(lineCStr, out lineC);
+            int.TryParse(Console.ReadLine(), out lineC);
 
             double square = triangelSquare(lineA, lineB, lineC);
             Console.WriteLine("Triangel Square: {0}", square);

@@ -7,6 +7,7 @@ namespace SimpleTasks
         static void Main(string[] args)
         {
             bool alive = true;
+            const int STRING_LENGHT = 5;
 
             while (alive)
             {
@@ -20,7 +21,7 @@ namespace SimpleTasks
                     continue;
                 }
 
-                if (inputStr.Length < 5)
+                if (inputStr.Length < STRING_LENGHT)
                 {
                     Console.WriteLine("Input must containe 5 digits");
                     continue;

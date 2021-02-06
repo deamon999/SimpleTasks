@@ -8,8 +8,9 @@ namespace SimpleTasks8
         {
             DateTime today = DateTime.Now;
             DateTime lastMonthDate = today.AddMonths(-1);
+            const int TICKS_IN_MILLISECOND = 10000;
 
-            Console.WriteLine($"{today.Ticks - lastMonthDate.Ticks} milliseconds passed from the same date of previous month");
+            Console.WriteLine($"{today.Ticks / TICKS_IN_MILLISECOND - lastMonthDate.Ticks / TICKS_IN_MILLISECOND} milliseconds passed from the same date of previous month");
 
             Console.WriteLine("*****************************************************");
             Console.WriteLine("Enter year:");

@@ -10,7 +10,14 @@ namespace SimpleTasks3
             int radius;
             int.TryParse(Console.ReadLine(), out radius);
 
-            Console.WriteLine($"Circle length is: {Math.PI * radius * 2}");
+            if (radius == 0)
+            {
+                Console.WriteLine("Wrong data!");
+            }
+            else
+            {
+                Console.WriteLine($"Circle length is: {Math.PI * radius * 2}");
+            }
         }
     }
 }
